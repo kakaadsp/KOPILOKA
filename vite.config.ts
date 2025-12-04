@@ -9,6 +9,8 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
+  // FIX KRUSIAL: Menambahkan base path untuk GitHub Pages
+  base: '/Kopiloka-Hackathon/', // <--- INI ADALAH FIX JALUR FINAL
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
     alias: {
